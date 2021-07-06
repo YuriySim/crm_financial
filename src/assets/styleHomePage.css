@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #37474f;
+  color: #fff;
+}
+
+.start-navbar {
+  width: 100%;
+  background-color: #5c6bc0 !important;
+  z-index: 2;
+}
+
+.brand-logo .fas {
+  margin-left: 15px;
+  font-size: 40px;
+  transform: rotate(10deg);
+}
+
+.start-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 124px);
+  font-size: 26px;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.width-row {
+  width: 80%;
+}
+
+.start-col .fas {
+  font-size: 7.5em;
+  transform: rotate(10deg);
+  display: flex;
+  justify-content: center;
+}
+
+.start-col p {
+  font-size: 1em;
+}
+
+.start-col li {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.start-col {
+  margin-bottom: 15px;
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px 0;
+}
+
+.discrip {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #5c6bc0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative !important;
+
+  -webkit-box-shadow: 0 -2px 2px 0 rgb(0 0 0 / 14%), 0 -3px 1px -2px rgb(0 0 0 / 12%),
+    0 -1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 -2px 2px 0 rgb(0 0 0 / 14%), 0 -3px 1px -2px rgb(0 0 0 / 12%), 0 -1px 5px 0 rgb(0 0 0 / 20%);
+  z-index: 2;
+}
+
+@media (max-width: 1350px) {
+  .start-main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .start-main {
+    font-size: 22px;
+  }
+
+  .brand-logo .fas {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .start-main {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brand-logo .fas {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .start-main {
+    font-size: 16px;
+  }
+
+  brand-logo .fas {
+    font-size: 20px;
+  }
+
+  .start-col {
+    margin-bottom: 10px;
+  }
+
+  .start-button {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-height: 800px) {
+  start-main {
+    font-size: 20px;
+  }
+
+  .start-col p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .start-col .fas {
+    font-size: 3.5em;
+  }
+
+  .start-main {
+    min-height: calc(100vh - 116px);
+  }
+}
+
+@media (max-height: 800px) {
+  .start-main {
+    font-size: 20px;
+  }
+}
+
+.switch label .lever {
+  width: 36px;
+  height: 14px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin: 0 5px;
+}
