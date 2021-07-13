@@ -6,6 +6,9 @@ export default {
       usd: 0,
       eur: 0,
 
+      curRub: 0,
+      curUsd: 0,
+
       currencies: [],
     }
   },
@@ -25,29 +28,37 @@ export default {
 
     totalBillInOtherCurrencies(totalBill) {
       if (this.currencyInfo === 'RUB') {
-        this.eur = (totalBill / this.currencies['RUB']).toFixed(2)
-        this.usd = (this.eur / this.currencies['USD']).toFixed(2)
+        this.eur = (totalBill / this.curRub).toFixed(2)
+        this.usd = (this.eur * this.curUsd).toFixed(2)
       } else if (this.currencyInfo === 'USD') {
-        this.eur = (totalBill * this.currencies['USD']).toFixed(2)
+        this.eur = (totalBill / this.curUsd).toFixed(2)
       } else {
-        this.usd = (totalBill / this.currencies['USD']).toFixed(2)
+        this.usd = (totalBill * this.curUsd).toFixed(2)
       }
     },
 
     currenciesCalculate() {
+      this.curRub = this.currencies['RUB']
+      this.curUsd = this.currencies['USD']
+
       var cury = []
+
       if (this.currencyInfo === 'RUB') {
         var base = this.currencies['RUB']
+
         for (var cur in this.currencies) {
           this.currencies[cur] = +(this.currencies[cur] / base).toFixed(3)
         }
       } else if (this.currencyInfo === 'USD') {
         var base = this.currencies['USD']
+
         for (var cur in this.currencies) {
           this.currencies[cur] = +(this.currencies[cur] / base).toFixed(2)
         }
       } else {
-        this.currencies[cur] = +(this.currencies[cur] * 1).toFixed(2)
+        for (var cur in this.currencies) {
+          this.currencies[cur] = +(this.currencies[cur] * 1).toFixed(2)
+        }
       }
     },
   },

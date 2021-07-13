@@ -266,7 +266,7 @@
         this.totalBill += Number(bill.amount)
       }
 
-      this.totalBillInOtherCurrencies(this.totalBill)
+      await this.totalBillInOtherCurrencies(this.totalBill)
 
       for(var category of this.categories) {
         if(category.titleCategory === 'Без категории' || category.titleCategory === 'No category') {
