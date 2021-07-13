@@ -21,7 +21,7 @@
   -ms-flex-align: center;
   align-items: center;
   padding-top: 5rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .main-layout {
@@ -187,7 +187,7 @@ footer {
 /*------------------Login/Register Page------------------*/
 
 .auth-card {
-  width: 500px;
+  max-width: 500px;
   background-color: #37474f;
 }
 
@@ -218,6 +218,12 @@ footer {
 
 .link-color:hover {
   color: #ff8f00 !important;
+}
+
+@media (min-width: 800px) {
+  .auth-card {
+    width: 500px;
+  }
 }
 
 /*------------------Common for pages------------------*/

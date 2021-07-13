@@ -17,9 +17,20 @@
   z-index: 2;
 }
 
-.brand-logo .fas {
-  margin-left: 15px;
-  font-size: 40px;
+.nav-custom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.left-block {
+  margin: 10px 0 0 15px;
+}
+
+.left-block .fas {
+  font-size: 30px;
   transform: rotate(10deg);
 }
 
@@ -92,10 +103,6 @@ footer {
   .start-main {
     font-size: 22px;
   }
-
-  .brand-logo .fas {
-    font-size: 30px;
-  }
 }
 
 @media (max-width: 1070px) {
@@ -105,18 +112,14 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .brand-logo .fas {
-    opacity: 0;
+  .left-block .fas {
+    display: none;
   }
 }
 
 @media (max-width: 800px) {
   .start-main {
     font-size: 16px;
-  }
-
-  brand-logo .fas {
-    font-size: 20px;
   }
 
   .start-col {

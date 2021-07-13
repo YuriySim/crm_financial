@@ -1,10 +1,10 @@
 <template>
   <div class="mainContainer">
     <nav class="start-navbar">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><i class="fas fa-hand-holding-usd"></i></a>
+      <div class="nav-custom-wrapper">
+        <a href="#" class="left-block"><i class="fas fa-hand-holding-usd"></i></a>
 
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul class="right-block">
           <li>
             <div class="switch">
               <label>
