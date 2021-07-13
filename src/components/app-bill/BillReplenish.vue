@@ -143,7 +143,7 @@
 
           await this.$store.dispatch('createRecord', {formData, directory: 'income'})
 
-          this.$message('Счет пополнен!')
+          this.$message(this.localizeFilter('BillReplenished'))
         }catch (error) {''}
       },
     },
