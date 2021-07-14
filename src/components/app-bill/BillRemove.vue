@@ -98,7 +98,7 @@
           await this.$store.dispatch('removeBills', idBill)
           this.$emit('removeBills', idBill)
 
-          this.$message('Счет удален')
+          this.$message(this.localizeFilter('BillDeleted'))
 
         }catch (error) {''}
       },

@@ -123,7 +123,7 @@
           await this.$store.dispatch('updateBills', formData)
           this.$emit('editTitle', formData)
 
-          this.$message('Счет изменен')
+          this.$message(this.localizeFilter('BillEdited'))
 
         }catch (error) {''}
       }

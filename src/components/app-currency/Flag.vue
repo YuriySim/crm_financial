@@ -23,7 +23,7 @@
 
     methods: {
       Src() {
-        const src = 'http://www.geonames.org/flags/x/' + this.countryCode[this.idx] + '.gif'
+        const src = 'https://www.geonames.org/flags/x/' + this.countryCode[this.idx] + '.gif'
 
         return src
       }

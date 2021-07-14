@@ -183,7 +183,7 @@
           await this.$store.dispatch('updateBills', formDataTwo)
           this.$emit('transferSum', {formDataOne, formDataTwo})
 
-          this.$message('Сумма переведена')
+          this.$message(this.localizeFilter('AmountTransferred'))
 
         }catch (error) {''}
       },

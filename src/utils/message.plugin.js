@@ -7,7 +7,7 @@ export default {
       M.toast({ html })
     }
     Vue.config.globalProperties.$error = function(html) {
-      M.toast({ html: `[Ошибка]: ${html}` })
+      M.toast({ html: `[Ошибка/Error]: ${html}` })
     }
   },
 }

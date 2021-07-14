@@ -74,7 +74,7 @@
           this.titleBill = ''
           this.$emit('addBill', newBill)
 
-          this.$message('Счет добавлен')
+          this.$message(this.localizeFilter('BillAdd'))
 
         }catch (error) {''}
       },
