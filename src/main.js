@@ -16,13 +16,13 @@ import Pagination from 'v-pagination-3'
 import tooltipDirective from '@/directives/tooltip.directive'
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyA0zSvIPurvgE9YiiWAwtr06JN6yJDXo1s',
-  authDomain: 'crm-financial.firebaseapp.com',
-  projectId: 'crm-financial',
-  storageBucket: 'crm-financial.appspot.com',
-  messagingSenderId: '193700671921',
-  appId: '1:193700671921:web:dd9d4845ed7aca21938d90',
-  measurementId: 'G-P7TM2KQ0BR',
+  apiKey: 'AIzaSyC7I8aXdP-s5hrqf0f7xM8HJ-QCTmGQ81Q',
+  authDomain: 'finance-control-system.firebaseapp.com',
+  projectId: 'finance-control-system',
+  storageBucket: 'finance-control-system.appspot.com',
+  messagingSenderId: '67700040997',
+  appId: '1:67700040997:web:1b27204077d881f10fe6cc',
+  measurementId: 'G-ZX2QB413FL',
 })
 
 let app

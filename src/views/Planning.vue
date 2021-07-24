@@ -80,7 +80,7 @@
       const categories = await this.$store.dispatch('fetchCategories', { directory: 'outcome' })
 
       for (var category of categories) {
-        if (category.titleCategory === 'Без категории') {
+        if (category.titleCategory === 'Без категории' || category.titleCategory === 'No category') {
           categories.shift()
         }
       }
